@@ -44,8 +44,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: Pending
-- Live Site URL: Pending
+
+- Solution URL:  [Github repository](https://github.com/memominguez/bmi-calculator
+)
+- Live Site URL:  [Netlify](https://your-fitness-bmi.netlify.app)
 
 ## My process
 
