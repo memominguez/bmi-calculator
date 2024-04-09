@@ -1,0 +1,190 @@
+/* ***** Limitations of BMI heade *****r */
+
+.limitations-container {
+    width: 327px;
+    margin-inline: auto;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  
+    .limitationsbmi {
+      text-align: center;
+      margin-bottom: 56px;
+  
+      &__title {
+        font-size: 20px;
+        margin-bottom: 32px;
+      }
+  
+      &__paragraph {
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .curved-line-right {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .limitations-container {
+      width: 690px;
+      flex-direction: row;
+  
+      .limitations-container-spacer {
+        width: 1px;
+        height: 1020px;
+        background-color: transparent;
+      }
+  
+      .limitationsbmi {
+        text-align: center;
+        margin-bottom: 56px;
+  
+        &__title {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    .limitations-container {
+      width: 1160px;
+      height: 724px; /* 704 + 20 */
+  
+      .limitations-container-spacer {
+        height: 724px; /* 704 + 20 */
+      }
+  
+      .limitationsbmi {
+        width: 564px;
+        text-align: left;
+        margin-bottom: 0;
+  
+        &__title {
+          font-size: 40px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+  
+  /* *********** CARDS ************ */
+  
+  .person-card {
+    // width: 100%;
+    padding: 24px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    // box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0px 12px 30px rgb(0 0 0 / 0.15);
+  }
+  
+  .person-card p {
+    line-height: 1.5;
+  }
+  
+  .person-card__heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 16px;
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .person-card {
+      width: 332px;
+      padding: 32px;
+      margin-bottom: 0;
+    }
+  
+    .card-gender {
+      height: 230px;
+      position: absolute;
+      top: 195px;
+      left: 0;
+    }
+  
+    .card-age {
+      height: 230px;
+      position: absolute;
+      top: 195px;
+      right: 0;
+    }
+  
+    .card-muscle {
+      height: 254px;
+      position: absolute;
+      top: 451px;
+      left: 0;
+    }
+  
+    .card-pregnancy {
+      height: 254px;
+      position: absolute;
+      top: 451px;
+      right: 0;
+    }
+  
+    .card-race {
+      position: absolute;
+      top: 730px;
+      left: 160px;
+    }
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    .curved-line-right {
+      display: block;
+      position: absolute;
+      top: 250px;
+      left: 170px;
+    }
+
+    .person-card {
+      width: 365px;
+    }
+  
+    .card-gender {
+      height: 230px;
+      position: absolute;
+      top: 0;
+      left: 700px;
+    }
+  
+    .card-age {
+      height: 184px;
+      position: absolute;
+      top: 264px;
+      right: 415px;
+    }
+  
+    .card-muscle {
+      height: 184px;
+      position: absolute;
+      top: 264px;
+      left: 784px;
+    }
+  
+    .card-pregnancy {
+      height: 232px;
+      position: absolute;
+      top: 472px;
+      right: 600px;
+    }
+  
+    .card-race {
+      height: 232px;
+      position: absolute;
+      top: 472px;
+      left: 600px;
+    }
+  }  
+  

@@ -1,0 +1,178 @@
+.input-output-container {
+  /* */
+  width: 328px;
+  height: 700px;
+  padding-top: 24px;
+  position: absolute;
+  top: 471px;
+  left: 24px;
+  z-index: 4; 
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(52, 95, 246, 0.07) 36%,
+    rgba(37, 51, 71, 0.07) 100%
+  );
+}
+
+.input { 
+  width: 280px;
+  margin-inline: auto;
+}
+
+.input__title { 
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.input__buttons { 
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+  margin-bottom: 20px;
+}
+
+.input__buttons-group { 
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#metric { 
+  transform: scale(2);
+  cursor: pointer;
+}
+
+#imperial { 
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.hero__output { 
+  width: 280px;
+  background-color: var(--blue);
+  color: var(--pure-white);
+  border-radius: 16px;
+  padding: 30px 28px;
+  position: absolute;
+  top: 400px;
+  left: 24px;
+  z-index: 3;
+}
+
+.output-intro {  
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero__bmi { 
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero__comment { 
+  line-height: 1.6;
+  font-weight: 200;
+}
+
+.hero__welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__welcome h1 {
+  margin-bottom: 15px;
+}
+
+.hero__welcome p {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+ 
+  .input-output-container {   
+    width: 686px;
+    height: 466px;    
+    padding: 32px;
+    background: var(--pure-white);
+    top: 354px;
+    left: 41px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 80px rgb(0 0 0 / 0.2);
+  }
+
+  .input {   
+    width: 100%;
+  }
+
+  .input_title {   
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .input__buttons {   
+    justify-content: flex-start;
+    gap: 220px;
+    margin-bottom: 32px;
+  }
+
+  .input__buttons-group {    
+    margin-bottom: 0;
+  }
+
+  .hero__output {   
+    width: 622px;
+    border-radius: 16px 110px 110px 16px;
+    left: 32px;
+    top: 286px;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+
+    &--left {
+      flex-basis: 50%;
+
+      .output-intro {       
+        margin-bottom: 15px;
+      }
+
+      .hero__bmi {       
+        margin-bottom: 0;
+      }
+    }
+
+    &--right {    
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .input-output-container:is(.metric) {
+    --desktop-height: 466px;
+    --output-offset: 286px;
+  }
+  .input-output-container:is(.imperial) {
+    --desktop-height: 595px;
+    --output-offset: 405px;
+  }
+
+  .input-output-container {   
+    top: 181px;
+    left: 750px;
+    width: 564px;
+    height: var(--desktop-height);
+  } 
+
+  .input__buttons {
+    margin-bottom: 40px;
+  }
+
+  .hero__output {   
+    width: 500px;
+    top: var(--output-offset);
+  }
+}
